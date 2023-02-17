@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8de0865b-59cb-4fad-a1c3-f7de49f3d1d2" name="变更" comment="Vm and Render">
-      <change afterPath="$PROJECT_DIR$/bable.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midulePage/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/miduleStencil/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/render.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +80,7 @@
       <updated>1676464405130</updated>
       <workItem from="1676464406175" duration="4820000" />
       <workItem from="1676549564770" duration="5116000" />
-      <workItem from="1676628655596" duration="3427000" />
+      <workItem from="1676628655596" duration="5188000" />
     </task>
     <task id="LOCAL-00001" summary="LICENSE AND README.md">
       <created>1676465275381</created>
@@ -98,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676465275381</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Vm and Render">
+      <created>1676632954301</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676632954301</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

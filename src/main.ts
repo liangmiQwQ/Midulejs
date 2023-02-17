@@ -1,6 +1,7 @@
 interface vm{
     data?:{},
-    stencil?:MiduleStencil
+    stencil?: [MiduleStencil,{}],
+    methods?:{},
 }
 
 interface virtualDOM{
@@ -13,9 +14,11 @@ class MidulePage {
     constructor(vm:vm) {
         this.data = vm.data
         this.stencil = vm.stencil
+        this.methods = vm.methods
     }
     data = {}
-    stencil: MiduleStencil | undefined = MiduleDefaultStencil
+    stencil = [MiduleDefaultStencil,{}]
+    methods = {}
 }
 
 class MiduleStencil{
@@ -23,12 +26,17 @@ class MiduleStencil{
     setTemplate(template:virtualDOM){
         this.template = template
     }
+    constructor(vm:vm) {
+
+    }
 }
 
 class MiduleComponents{
 
 }
 
-const MiduleDefaultStencil = new MiduleStencil()
+const MiduleDefaultStencil = new MiduleStencil({
 
-export {MidulePage, MiduleStencil, MiduleComponents,MiduleDefaultStencil}
+})
+
+export {MidulePage, MiduleStencil, MiduleComponents, MiduleDefaultStencil}
