@@ -9,5 +9,3 @@ const somePage = new MidulePage({
 })
 
 const someComponents = new MiduleComponents()
-
-render()
