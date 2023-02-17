@@ -7,6 +7,7 @@
     <list default="true" id="8de0865b-59cb-4fad-a1c3-f7de49f3d1d2" name="变更" comment="Vm and Render">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/render.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderFunc.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +81,7 @@
       <updated>1676464405130</updated>
       <workItem from="1676464406175" duration="4820000" />
       <workItem from="1676549564770" duration="5116000" />
-      <workItem from="1676628655596" duration="5188000" />
+      <workItem from="1676628655596" duration="5728000" />
     </task>
     <task id="LOCAL-00001" summary="LICENSE AND README.md">
       <created>1676465275381</created>
@@ -96,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676632954301</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Vm and Render">
+      <created>1676634718081</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676634718081</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

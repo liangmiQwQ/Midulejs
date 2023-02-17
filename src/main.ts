@@ -1,3 +1,5 @@
+import render from "./renderFunc"
+
 interface vm{
     data?:{},
     stencil?: [MiduleStencil,{}],
@@ -39,4 +41,4 @@ const MiduleDefaultStencil = new MiduleStencil({
 
 })
 
-export {MidulePage, MiduleStencil, MiduleComponents, MiduleDefaultStencil}
+export {MidulePage, MiduleStencil, MiduleComponents, MiduleDefaultStencil,render}
