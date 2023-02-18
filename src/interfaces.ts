@@ -9,7 +9,7 @@ interface vm{
 
 interface virtualDOM{
     tagName: string,
-    children?:Array<string|virtualDOM>,
+    children?:Array<string|virtualDOM|undefined>,
     props?:Record<string, any>
 }
 
