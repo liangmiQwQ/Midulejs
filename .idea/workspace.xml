@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8de0865b-59cb-4fad-a1c3-f7de49f3d1d2" name="变更" comment="Reander">
+    <list default="true" id="8de0865b-59cb-4fad-a1c3-f7de49f3d1d2" name="变更" comment="Render -&gt; getOldVirtualDOM">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderFunc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderFunc.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,7 @@
       <workItem from="1676464406175" duration="4820000" />
       <workItem from="1676549564770" duration="5116000" />
       <workItem from="1676628655596" duration="13818000" />
-      <workItem from="1676711530281" duration="1907000" />
+      <workItem from="1676711530281" duration="3440000" />
     </task>
     <task id="LOCAL-00001" summary="LICENSE AND README.md">
       <created>1676465275381</created>
@@ -146,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676711540071</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Render -&gt; getOldVirtualDOM">
+      <created>1676713467510</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676713467510</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +167,8 @@
     <MESSAGE value="Data and frame" />
     <MESSAGE value="Readme" />
     <MESSAGE value="Reander" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reander" />
+    <MESSAGE value="Render -&gt; getOldVirtualDOM" />
+    <option name="LAST_COMMIT_MESSAGE" value="Render -&gt; getOldVirtualDOM" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

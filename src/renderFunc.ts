@@ -1,10 +1,19 @@
 import {virtualDOM} from "./interfaces"
-import * as child_process from "child_process";
 
-export default function (dom:virtualDOM,mountElement:string){
+export default function (newDom:virtualDOM,mountElement:string){
     const app = document.querySelector(mountElement)
-    console.log(getOldVirtualDOM(mountElement))
+    const oldValue = getOldVirtualDOM(mountElement)
     //a main node
+    diff(newDom,oldValue,app)
+}
+
+function diff(nv:virtualDOM,ov:virtualDOM,mountElement:Element):Error{
+    if(nv === ov){
+        return undefined
+    }
+
+
+    return undefined
 }
 
 function getOldVirtualDOM(element:string):virtualDOM{
