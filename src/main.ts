@@ -1,16 +1,5 @@
 import render from "./renderFunc"
-
-interface vm{
-    data?:{},
-    stencil?: [MiduleStencil,{}],
-    methods?:{},
-}
-
-interface virtualDOM{
-    tagName: string,
-    children?:string|virtualDOM,
-    props?:Record<string, any>
-}
+import {virtualDOM,vm} from "./interfaces";
 
 class MidulePage {
     constructor(vm:vm) {
@@ -34,7 +23,7 @@ class MiduleStencil{
 }
 
 class MiduleComponents{
-
+    template:virtualDOM|undefined
 }
 
 const MiduleDefaultStencil = new MiduleStencil({

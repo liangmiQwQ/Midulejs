@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8de0865b-59cb-4fad-a1c3-f7de49f3d1d2" name="变更" comment="Data and frame">
+    <list default="true" id="8de0865b-59cb-4fad-a1c3-f7de49f3d1d2" name="变更" comment="Readme">
+      <change afterPath="$PROJECT_DIR$/src/interfaces.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderFunc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderFunc.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +83,7 @@
       <updated>1676464405130</updated>
       <workItem from="1676464406175" duration="4820000" />
       <workItem from="1676549564770" duration="5116000" />
-      <workItem from="1676628655596" duration="6331000" />
+      <workItem from="1676628655596" duration="13818000" />
     </task>
     <task id="LOCAL-00001" summary="LICENSE AND README.md">
       <created>1676465275381</created>
@@ -116,7 +120,28 @@
       <option name="project" value="LOCAL" />
       <updated>1676635673575</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Readme">
+      <created>1676635865018</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676635865018</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Readme">
+      <created>1676635883585</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676635883585</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Readme">
+      <created>1676635899004</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676635899004</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,7 +153,8 @@
     <MESSAGE value="Change Frame" />
     <MESSAGE value="Vm and Render" />
     <MESSAGE value="Data and frame" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data and frame" />
+    <MESSAGE value="Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

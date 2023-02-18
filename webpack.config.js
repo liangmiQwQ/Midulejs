@@ -29,7 +29,8 @@ module.exports = {
 
         ]
     },
-    mode:"development",
+    // mode:"development",
+    mode: "production",
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/test/test.html"
