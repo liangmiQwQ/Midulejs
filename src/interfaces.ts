@@ -4,7 +4,8 @@ interface vm{
     data?:{},
     stencil?: [MiduleStencil,{}],
     methods?:{},
-    template?:virtualDOM
+    template?:virtualDOM,
+    options?:{}
 }
 
 interface virtualDOM{

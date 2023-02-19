@@ -1,11 +1,16 @@
 {
-  "name": "Midulejs",
-  "version": "1.0.0",
+  "name": "midule",
+  "version": "0.2.1",
+  "description": "A JavaScript frame.",
+  "main": "src/main.ts",
+  "license": "MIT",
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve",
-    "release": "node script/releaseBuild.js"
+    "release": "node script/releaseBuild.js",
+    "publish": "npm publish"
   },
+  "exports": {},
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",

@@ -11,7 +11,7 @@ module.exports = {
     // entry: "./src/main.ts",
     entry: "./src/test/test.ts",
     output: {
-        path: path.resolve(__dirname,'dist'),
+        path: path.resolve(__dirname,'dev'),
         filename: "midule.test.js"
     },
     module: {
