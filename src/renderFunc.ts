@@ -5,25 +5,25 @@ export default function (newDom: virtualDOM, mountElement: string) {
     const oldDom = getOldVirtualDOM(mountElement)
     //a main node
     console.log(newDom,oldDom)
-    diff(newDom, oldDom, app)
+    diff(<virtualDOM>newDom.children[0], <virtualDOM>oldDom.children[0], app)
 }
 
 function diff(nv: virtualDOM, ov: virtualDOM, mountElement: Element): virtualDOM {
     if (nv === ov) {
         return undefined;
-    } else if (nv.tagName !== ov.tagName || nv.key !== ov.key) {
-        return nv;
+    // } else if (nv.tagName !== ov.tagName || nv.key !== ov.key) {
+    //     return nv;
     }
     const newEl = createElement(nv);
     const oldEl = createElement(ov);
 
     if (oldEl) {
         // 检查节点是否为父节点的子节点
-        if (mountElement.contains(oldEl)) {
-            mountElement.replaceChild(newEl, oldEl);
-        } else {
-            console.error('The node to be replaced is not a child of this node.');
-        }
+        console.log(newEl,oldEl)
+        // mountElement.replaceChild(newEl, oldEl);
+        const serializer = new XMLSerializer();
+
+        mountElement.innerHTML = serializer.serializeToString(newEl);
     } else {
         mountElement.appendChild(newEl);
     }
