@@ -10,9 +10,8 @@ export default function (newDom:virtualDOM,mountElement:string){
 function diff(nv:virtualDOM,ov:virtualDOM,mountElement:Element):Error{
     if(nv === ov){
         return undefined
+    }else{
     }
-
-
     return undefined
 }
 

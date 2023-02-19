@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8de0865b-59cb-4fad-a1c3-f7de49f3d1d2" name="变更" comment="Render -&gt; getOldVirtualDOM">
+    <list default="true" id="8de0865b-59cb-4fad-a1c3-f7de49f3d1d2" name="变更" comment="Build">
+      <change afterPath="$PROJECT_DIR$/script/releaseBuild.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpackConfig/webpack.config.rel.amd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpackConfig/webpack.config.rel.cjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpackConfig/webpack.config.rel.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpackConfig/webpack.config.rel.sjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpackConfig/webpack.config.rel.var.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderFunc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderFunc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +26,8 @@
       <list>
         <option value="package.json" />
         <option value="tsconfig.json" />
-        <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -35,27 +42,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/liangmi/code/Midulejs/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "javascript.nodejs.core.library.configured.version": "16.17.1",
+    "javascript.nodejs.core.library.typings.version": "16.18.12",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/liangmi/code/Midulejs/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/webpackConfig" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
@@ -81,7 +91,7 @@
       <workItem from="1676464406175" duration="4820000" />
       <workItem from="1676549564770" duration="5116000" />
       <workItem from="1676628655596" duration="13818000" />
-      <workItem from="1676711530281" duration="3440000" />
+      <workItem from="1676711530281" duration="6915000" />
     </task>
     <task id="LOCAL-00001" summary="LICENSE AND README.md">
       <created>1676465275381</created>
@@ -153,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676713467510</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Render -&gt; diff">
+      <created>1676714987037</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676714987037</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +185,9 @@
     <MESSAGE value="Readme" />
     <MESSAGE value="Reander" />
     <MESSAGE value="Render -&gt; getOldVirtualDOM" />
-    <option name="LAST_COMMIT_MESSAGE" value="Render -&gt; getOldVirtualDOM" />
+    <MESSAGE value="Render -&gt; diff" />
+    <MESSAGE value="Build" />
+    <option name="LAST_COMMIT_MESSAGE" value="Build" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

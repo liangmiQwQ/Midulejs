@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "release": "node script/releaseBuild.js"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
@@ -15,6 +16,7 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
+    "commonjs": "^0.0.1",
     "html-webpack-plugin": "^5.5.0",
     "webpack-dev-server": "^4.11.1"
   }
