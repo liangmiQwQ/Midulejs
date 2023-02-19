@@ -1,27 +1,60 @@
 import {virtualDOM} from "./interfaces"
 
-export default function (newDom:virtualDOM,mountElement:string){
+export default function (newDom: virtualDOM, mountElement: string) {
     const app = document.querySelector(mountElement)
     const oldValue = getOldVirtualDOM(mountElement)
     //a main node
-    diff(newDom,oldValue,app)
+    diff(newDom, oldValue, app)
 }
 
-function diff(nv:virtualDOM,ov:virtualDOM,mountElement:Element):Error{
-    if(nv === ov){
+function diff(nv: virtualDOM, ov: virtualDOM, mountElement: Element): Error {
+    if (nv === ov) {
         return undefined
-    }else{
     }
+    const newEl = createElement(nv)
+    const oldEl = createElement(ov)
+
+    if (oldEl) {
+        // 如果旧节点存在，则替换它
+        mountElement.replaceChild(newEl, oldEl)
+    } else {
+        // 否则附加新节点
+        mountElement.appendChild(newEl)
+    }
+
     return undefined
 }
 
-function getOldVirtualDOM(element:string):virtualDOM{
+function createElement(vnode: virtualDOM): HTMLElement | Text {
+    if (typeof vnode === 'string') {
+        // 如果虚拟节点是一个文本节点，创建一个文本节点并返回
+        return document.createTextNode(vnode);
+    }
+
+    // 否则创建一个元素节点
+    const el = document.createElement(vnode.tagName);
+
+    // 设置节点属性
+    for (let name in vnode.props) {
+        setAttribute(el, name, vnode.props[name]);
+    }
+
+    // 递归创建子节点
+    vnode.children.forEach(child => {
+        el.appendChild(createElement(<virtualDOM>child));
+    });
+
+    return el;
+}
+
+
+function getOldVirtualDOM(element: string): virtualDOM {
     const node = document.querySelector(element)
     return createVirtualDOM(node)
 }
 
-function createVirtualDOM(node: Element):virtualDOM{
-    let vm:virtualDOM = {
+function createVirtualDOM(node: Element): virtualDOM {
+    let vm: virtualDOM = {
         tagName: node.tagName,
         props: {},
         children: [],
@@ -29,7 +62,7 @@ function createVirtualDOM(node: Element):virtualDOM{
 
     // 将节点属性转换为props对象
     for (let i = 0; i < node.attributes.length; i++) {
-        const { name, value } = node.attributes[i];
+        const {name, value} = node.attributes[i];
         vm.props[name] = value;
     }
 
@@ -48,4 +81,20 @@ function createVirtualDOM(node: Element):virtualDOM{
     }
 
     return vm;
+}
+
+function setAttribute(node: HTMLElement, name: string, value: any) {
+    if (name === 'className') {
+        name = 'class';
+    }
+
+    if (typeof value === 'boolean') {
+        if (value) {
+            node.setAttribute(name, '');
+        } else {
+            node.removeAttribute(name);
+        }
+    } else {
+        node.setAttribute(name, value);
+    }
 }
