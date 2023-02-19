@@ -4,7 +4,12 @@
     "target": "es5",
     "sourceMap": true,
     "strict": true,
-    "strictNullChecks": false
+    "strictNullChecks": false,
+    "lib": [
+      "dom",
+      "es5",
+      "scripthost",
+    ]
   },
   "exclude": [
     "node_modules"
