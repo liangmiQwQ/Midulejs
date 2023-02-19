@@ -1,21 +1,56 @@
-const path = require("path")
 const webpack = require("webpack")
+const path = require("path")
 
-console.log(path.resolve(__dirname,"../webpackConfig/webpack.config.rel.sjs.js"))
-const ems = require(path.resolve(__dirname, "../webpackConfig/webpack.config.rel.ems.js")),
-    cjs = require(path.resolve(__dirname, "../webpackConfig/webpack.config.rel.cjs.js")),
-    amd = require(path.resolve(__dirname, "../webpackConfig/webpack.config.rel.amd.js")),
-    sjs = require(path.resolve(__dirname, "../webpackConfig/webpack.config.rel.sjs.js")),
-    varModule = require(path.resolve(__dirname, "../webpackConfig/webpack.config.rel.var.js")),
-    configs = [ems, cjs, amd, sjs, varModule];
+const ems = {
+    resolve: {
+        extensions: [
+            ".js",
+            ".ts"
+        ]
+    },
+    entry: "./src/main.ts",
+    // entry: "./src/test/test.ts",
+    output: {
+        path: path.resolve(__dirname, '../dist'),
+        filename: "midule.ems.js",
+        libraryTarget: `module`
+    },
+    experiments: {
+        outputModule: true
+    },
+    module: {
+        rules: [
+            {
+                test: /\.ts$/,
+                exclude: /node_modules|script|webpackConfig/,
+                loader: "babel-loader",
+            },
+            {
+                test: /\.ts$/,
+                use: "ts-loader",
+                exclude: /node_modules|script|webpackConfig/
+            },
+
+        ]
+    },
+    // mode:"development",
+    mode: "production",
+}
+
+const configs = [ems];
 
 
 configs.forEach((config) => {
-    webpack(config, (err, stats) => {
-        if(err){
-            console.error(err)
-        }
-        // 打印编译结果
-        console.log(stats.toString());
-    });
+    try {
+        webpack(config, (err, stats) => {
+            if (err) {
+                console.error(err);
+            }
+            // 打印编译结果
+            console.log(stats.toString());
+        });
+    } catch (error) {
+        console.error(error);
+
+    }
 });

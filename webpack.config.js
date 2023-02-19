@@ -12,7 +12,7 @@ module.exports = {
     entry: "./src/test/test.ts",
     output: {
         path: path.resolve(__dirname,'dist'),
-        filename: "midule.js"
+        filename: "midule.test.js"
     },
     module: {
         rules: [
