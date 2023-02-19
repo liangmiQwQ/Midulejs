@@ -2,27 +2,33 @@ import {virtualDOM} from "./interfaces"
 
 export default function (newDom: virtualDOM, mountElement: string) {
     const app = document.querySelector(mountElement)
-    const oldValue = getOldVirtualDOM(mountElement)
+    const oldDom = getOldVirtualDOM(mountElement)
     //a main node
-    diff(newDom, oldValue, app)
+    console.log(newDom,oldDom)
+    diff(newDom, oldDom, app)
 }
 
-function diff(nv: virtualDOM, ov: virtualDOM, mountElement: Element): Error {
+function diff(nv: virtualDOM, ov: virtualDOM, mountElement: Element): virtualDOM {
     if (nv === ov) {
-        return undefined
+        return undefined;
+    } else if (nv.tagName !== ov.tagName || nv.key !== ov.key) {
+        return nv;
     }
-    const newEl = createElement(nv)
-    const oldEl = createElement(ov)
+    const newEl = createElement(nv);
+    const oldEl = createElement(ov);
 
     if (oldEl) {
-        // 如果旧节点存在，则替换它
-        mountElement.replaceChild(newEl, oldEl)
+        // 检查节点是否为父节点的子节点
+        if (mountElement.contains(oldEl)) {
+            mountElement.replaceChild(newEl, oldEl);
+        } else {
+            console.error('The node to be replaced is not a child of this node.');
+        }
     } else {
-        // 否则附加新节点
-        mountElement.appendChild(newEl)
+        mountElement.appendChild(newEl);
     }
 
-    return undefined
+    return undefined;
 }
 
 function createElement(vnode: virtualDOM): HTMLElement | Text {
@@ -49,8 +55,11 @@ function createElement(vnode: virtualDOM): HTMLElement | Text {
 
 
 function getOldVirtualDOM(element: string): virtualDOM {
-    const node = document.querySelector(element)
-    return createVirtualDOM(node)
+    const node = document.querySelector(element);
+    if (!node) {
+        throw new Error(`Unable to find node with selector ${element}`);
+    }
+    return createVirtualDOM(node);
 }
 
 function createVirtualDOM(node: Element): virtualDOM {

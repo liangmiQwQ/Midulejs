@@ -10,7 +10,8 @@ interface vm{
 interface virtualDOM{
     tagName: string,
     children?:Array<string|virtualDOM|undefined>,
-    props?:Record<string, any>
+    props?:Record<string, any>,
+    key?:string|number
 }
 
 export {vm,virtualDOM}

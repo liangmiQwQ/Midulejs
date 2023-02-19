@@ -24,6 +24,9 @@ class MiduleStencil{
 
 class MiduleComponents{
     template:virtualDOM|undefined
+    constructor(vm:vm) {
+        this.template = vm.template
+    }
 }
 
 const MiduleDefaultStencil = new MiduleStencil({

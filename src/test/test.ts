@@ -8,6 +8,14 @@ const somePage = new MidulePage({
     stencil:[Web,{}]
 })
 
-const someComponents = new MiduleComponents()
+const someComponents = new MiduleComponents({
+    template:{
+        tagName:"DIV",
+        props:{
+            "id":"app"
+        },
+        children:["this is a vm"]
+    }
+})
 
 render(someComponents.template,"#app")
