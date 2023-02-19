@@ -4,9 +4,12 @@ export default function (newDom: virtualDOM, mountElement: string) {
     const app = document.querySelector(mountElement)
     const oldDom = getOldVirtualDOM(mountElement)
     //a main node
-    console.log(newDom,oldDom)
-    // diff(newDom, <virtualDOM>oldDom.children[0], app)
-    diff(newDom, undefined ,app)
+    // console.log(newDom,oldDom)
+    if (oldDom.children.length < 1){
+        diff(newDom, undefined ,app)
+    }else{
+        diff(newDom, <virtualDOM>oldDom.children[0], app)
+    }
 }
 
 function diff(nv: virtualDOM, ov: virtualDOM|undefined, mountElement: Element): virtualDOM {
@@ -25,7 +28,7 @@ function diff(nv: virtualDOM, ov: virtualDOM|undefined, mountElement: Element): 
 
     if (oldEl) {
         // 检查节点是否为父节点的子节点
-        console.log(newEl,oldEl)
+        // console.log(newEl,oldEl)
         // mountElement.replaceChild(newEl, oldEl);
         const serializer = new XMLSerializer();
 

@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8de0865b-59cb-4fad-a1c3-f7de49f3d1d2" name="变更" comment="Render fucking finished!">
+    <list default="true" id="8de0865b-59cb-4fad-a1c3-f7de49f3d1d2" name="变更" comment="Render Func">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderFunc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderFunc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +86,7 @@
       <workItem from="1676464406175" duration="4820000" />
       <workItem from="1676549564770" duration="5116000" />
       <workItem from="1676628655596" duration="13818000" />
-      <workItem from="1676711530281" duration="15035000" />
+      <workItem from="1676711530281" duration="16211000" />
     </task>
     <task id="LOCAL-00001" summary="LICENSE AND README.md">
       <created>1676465275381</created>
@@ -209,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676784045638</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Render Func">
+      <created>1676799504862</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1676799504862</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +235,8 @@
     <MESSAGE value="Webpack build(ems)" />
     <MESSAGE value="Render feather" />
     <MESSAGE value="Render fucking finished!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Render fucking finished!" />
+    <MESSAGE value="Render Func" />
+    <option name="LAST_COMMIT_MESSAGE" value="Render Func" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
