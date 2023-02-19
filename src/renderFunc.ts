@@ -5,17 +5,23 @@ export default function (newDom: virtualDOM, mountElement: string) {
     const oldDom = getOldVirtualDOM(mountElement)
     //a main node
     console.log(newDom,oldDom)
-    diff(<virtualDOM>newDom.children[0], <virtualDOM>oldDom.children[0], app)
+    // diff(newDom, <virtualDOM>oldDom.children[0], app)
+    diff(newDom, undefined ,app)
 }
 
-function diff(nv: virtualDOM, ov: virtualDOM, mountElement: Element): virtualDOM {
-    if (nv === ov) {
+function diff(nv: virtualDOM, ov: virtualDOM|undefined, mountElement: Element): virtualDOM {
+    let oldEl;
+    if (ov === undefined){
+        oldEl = true
+        // first render
+    }else if (nv === ov) {
         return undefined;
     // } else if (nv.tagName !== ov.tagName || nv.key !== ov.key) {
     //     return nv;
+    }else{
+        oldEl = createElement(ov);
     }
     const newEl = createElement(nv);
-    const oldEl = createElement(ov);
 
     if (oldEl) {
         // 检查节点是否为父节点的子节点

@@ -12,7 +12,8 @@ const someComponents = new MiduleComponents({
     template:{
         tagName:"DIV",
         props:{
-            "id":"app"
+            "id":"app",
+            "className":"wtaonima",
         },
         children:["this is a vm"]
     }
