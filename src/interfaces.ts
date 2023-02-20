@@ -1,7 +1,10 @@
 import {MiduleStencil} from "./main";
+// import proxy from "./reactivity/Proxy";
+// import Proxy from "./reactivity/Proxy";
 
 interface vm{
-    data?:{},
+    data?:FreeObject,
+    // data?:{},
     stencil?: [MiduleStencil,{}],
     methods?:{},
     template?:virtualDOM,
@@ -15,4 +18,6 @@ interface virtualDOM{
     key?:string|number
 }
 
-export {vm,virtualDOM}
+type FreeObject = Record<string, any>;
+
+export {vm,virtualDOM,FreeObject}
